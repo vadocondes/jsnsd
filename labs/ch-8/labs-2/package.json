@@ -1,5 +1,5 @@
 {
-  "name": "labs-1",
+  "name": "labs-2",
   "version": "1.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
   "main": "app.js",
@@ -19,8 +19,8 @@
     "@fastify/sensible": "^4.1.0",
     "fastify": "^4.0.0",
     "fastify-cli": "^4.4.0",
-    "fastify-plugin": "^3.0.0",
-    "fastify-reply-from": "^6.7.0"
+    "@fastify/http-proxy": "^8.0.0",
+    "fastify-plugin": "^4.0.0"
   },
   "devDependencies": {
     "tap": "^16.1.0"
