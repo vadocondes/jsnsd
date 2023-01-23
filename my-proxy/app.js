@@ -6,11 +6,11 @@ module.exports = async function (fastify, opts) {
   fastify.register(sensible)
   fastify.register(proxy, {
     upstream: 'https://news.ycombinator.com/',
-    async preHandler(request, reply) {
-      if (request.query.token !== 'abc') {
-        throw fastify.httpErrors.unauthorized()
-      }
-    }
+    // async preHandler(request, reply) {
+    //   if (request.query.token !== 'abc') {
+    //     throw fastify.httpErrors.unauthorized()
+    //   }
+    // }
   })
 
 }

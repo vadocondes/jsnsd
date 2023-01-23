@@ -1,0 +1,19 @@
+'use strict'
+
+const fp = require('fastify-plugin')
+
+/**
+ * This plugins adds some utilities to handle http errors
+ *
+ * @see https://github.com/fastify/fastify-sensible
+ */
+module.exports = fp(async function (fastify, opts) {
+  fastify.register(require('@fastify/http-proxy'), {
+    upstream: 'https://news.ycombinator.com/',
+    async preHandler(req, res) {
+      if (req.query.token !== 'abc') {
+        throw fastify.httpErrors.unauthorized();
+      }
+    }
+  })
+})

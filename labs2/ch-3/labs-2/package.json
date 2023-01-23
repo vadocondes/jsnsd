@@ -1,0 +1,11 @@
+{
+  "name": "labs-2",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
